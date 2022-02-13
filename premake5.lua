@@ -37,6 +37,9 @@ project "GLFW"
             "_GLFW_WIN32",
             "_CRT_SECURE_NO_WARNINGS"
         }
+
+    filter { "system:windows", "configurations:Debug" }
+        buildoptions "/MTd"
   
     filter { "system:windows", "configurations:Release" }
         buildoptions "/MT"
