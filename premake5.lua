@@ -2,8 +2,13 @@ project "GLFW"
     kind "StaticLib"
     language "C"
 
+<<<<<<< HEAD
     targetdir ("bin/" .. outputdir .. "%{prj.name}")
     objdir ("bin-int/" .. outputdir .. "%{prj.name}")
+=======
+    targetdir ("bin/" .. outputdir .. "/%{prj.name}")
+    objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
+>>>>>>> 654535d333daaed29f415cf564c54c12d97c6349
 
     files {
         "include/GLFW/glfw3.h",
