@@ -2,8 +2,8 @@ project "GLFW"
     kind "StaticLib"
     language "C"
 
-    targetdir ("bin/" ... outputdir ... "%{prj.name}")
-    objdir ("bin-int/" ... outputdir ... "%{prj.name}")
+    targetdir ("bin/" .. outputdir .. "/%{prj.name}")
+    objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
 
     files {
         "include/GLFW/glfw3.h",
@@ -16,7 +16,7 @@ project "GLFW"
         "src/window.c"
     }
 
-    filter "system:windows" {
+    filter "system:windows"
         systemversion "latest"
         staticruntime "On"
   
@@ -37,5 +37,5 @@ project "GLFW"
             "_CRT_SECURE_NO_WARNINGS"
         }
   
-    filter { "system:windows" "configurations:Release" }
+    filter { "system:windows", "configurations:Release" }
         buildoptions "/MT"
