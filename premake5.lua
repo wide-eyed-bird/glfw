@@ -38,8 +38,10 @@ project "GLFW"
             "_CRT_SECURE_NO_WARNINGS"
         }
 
-    filter { "system:windows", "configurations:Debug" }
-        buildoptions "/MTd"
-  
-    filter { "system:windows", "configurations:Release" }
-        buildoptions "/MT"
+    filter "configurations:Debug"
+        runtime "Debug"
+        symbols "on"
+
+    filter "configurations:Release"
+        runtime "Release"
+        optimize "on"
