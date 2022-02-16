@@ -11,7 +11,7 @@ project "GLFW"
         "include/GLFW/glfw3native.h",
         "src/glfw_config.h",
         "internal.h",
-        "mappings.h"
+        "mappings.h",
         "src/context.c",
         "src/init.c",
         "src/input.c",
