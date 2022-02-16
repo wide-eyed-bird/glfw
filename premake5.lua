@@ -20,6 +20,7 @@ project "GLFW"
 
     filter "system:windows"
         systemversion "latest"
+        staticruntime "on"
   
         files {
             "src/win32_init.c",
