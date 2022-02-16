@@ -28,10 +28,10 @@ project "GLFW"
     
         "src/null_platform.h",
         "src/null_joystick.h",
-        "src/null_platform.c"
+        "src/null_platform.c",
     
         "src/egl_context.c",
-        "src/osmesa_context.c",
+        "src/osmesa_context.c"
     }
 
     filter "system:windows"
