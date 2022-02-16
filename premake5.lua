@@ -10,11 +10,11 @@ project "GLFW"
         "include/GLFW/glfw3.h",
         "include/GLFW/glfw3native.h",
         "src/glfw_config.h",
-        "internal.h",
-        "platform.h",
-        "mappings.h",
+        "src/internal.h",
+        "src/platform.h",
+        "src/mappings.h",
         "src/context.c",
-        "platform.c",
+        "src/platform.c",
         "src/init.c",
         "src/input.c",
         "src/monitor.c",
@@ -22,10 +22,7 @@ project "GLFW"
         "src/window.c",
         "src/null_init.c",
         "src/null_joystick.c",
-        "src/null_monitor.c",
-        "src/null_time.c",
-        "src/null_thread.c",
-        "src/null_window.c"
+        "src/null_platform.c"
     }
 
     filter "system:windows"
@@ -42,7 +39,7 @@ project "GLFW"
             "src/wgl_context.c",
             "src/egl_context.c",
             "src/osmesa_context.c",
-            "win32_module.c"
+            "src/win32_module.c"
         }
   
         defines {
