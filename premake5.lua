@@ -25,7 +25,7 @@ project "GLFW"
         "src/null_monitor.c",
         "src/null_time.c",
         "src/null_thread.c",
-        "src/null_window.c",
+        "src/null_window.c"
     }
 
     filter "system:windows"
